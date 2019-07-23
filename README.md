@@ -11,3 +11,5 @@
 [前端测试框架 Jest](https://zhuanlan.zhihu.com/p/28247899)
 
 [使用 Jest 和 Enzyme 测试 React 组件](https://zhuanlan.zhihu.com/p/63297384)
+
+[前端测试金字塔：重新思考你的测试](https://www.jianshu.com/p/7b163a97691a)
