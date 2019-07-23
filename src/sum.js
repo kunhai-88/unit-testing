@@ -1,7 +1,7 @@
-const sum = (a, b)=> {
+export default (a, b)=> {
   return a + b;
 }
-const minus =(a, b) =>{
-  return a + b;
+export const minus =(a, b) =>{
+  return a - b;
 }
-module.exports = sum;
+ 

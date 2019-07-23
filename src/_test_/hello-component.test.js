@@ -1,13 +1,12 @@
-let React = require('react');
-let { mount } = require('enzyme');
-let HelloComponent = require('../hello-component');
+import React from 'react';
+import HelloComponent from '../hello-component';
 
 describe('testing component',()=>{
   let wrapper;
    beforeEach(()=>{
-      wrapper = mount(<HelloComponent name="enzyme" />);
+      wrapper = shallow(<HelloComponent name="enzyme" />);
    })
-   test('name equal enzyme',()=>{
-      expect(wrapper.props().name).toBe('enzyme');
+   test('render hello component',()=>{
+      expect(wrapper).toMatchSnapshot();
    })
 });
