@@ -1,0 +1,1 @@
+export default '测试中文字符串'
