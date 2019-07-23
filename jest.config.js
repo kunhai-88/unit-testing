@@ -1,5 +1,7 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
+const path = require('path');
+
 
 module.exports = {
   // All imported modules in your tests should be mocked automatically
@@ -111,6 +113,7 @@ module.exports = {
 
   // The root directory that Jest should scan for tests and modules within
   // rootDir: null,
+  rootDir: path.resolve(__dirname),
 
   // A list of paths to directories that Jest should use to search for files in
   // roots: [
@@ -165,7 +168,9 @@ module.exports = {
   // timers: "real",
 
   // A map from regular expressions to paths to transformers
-  // transform: null,
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [
