@@ -6,7 +6,5 @@ describe('object testing',()=>{
   test('cat is defined', () => {
     expect(cat).toBeDefined();
   });
-  test('use toBe', () => {
-    expect(cat).toBe(dog);
-  });
+   
 });

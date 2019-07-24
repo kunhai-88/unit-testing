@@ -1,4 +1,4 @@
 module.exports = {
-  cat:{ name: 'Tom', age: 1 },
+  cat:{ name: 'Tom', age: 2 },
   dog:{ name: 'Tom', age: 2 }
 };
