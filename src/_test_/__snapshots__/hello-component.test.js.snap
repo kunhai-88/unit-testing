@@ -1,3 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`testing hello component render hello component 1`] = `ShallowWrapper {}`;
+exports[`testing hello component render hello component 1`] = `
+<div
+  className="hello"
+  name="enzyme"
+>
+  Hello 
+  enzyme
+</div>
+`;
