@@ -3,9 +3,10 @@
 exports[`testing hello component render hello component 1`] = `
 <div
   className="hello"
-  name="enzyme"
 >
-  Hello 
-  enzyme
+  Hello
+  <Name
+    name="enzyme"
+  />
 </div>
 `;

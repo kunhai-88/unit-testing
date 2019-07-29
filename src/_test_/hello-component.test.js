@@ -10,10 +10,10 @@ describe('testing hello component',()=>{
    test('render hello component',()=>{
       expect(toJson(wrapper)).toMatchSnapshot();
    })
-   test('hello component has className hello ',()=>{
-    expect(wrapper.find('.hello').length).toBe(1);
-   })
-   test('hello component has prop name equal "enzyme" ',()=>{
-    expect(wrapper.prop('name')).toEqual('enzyme');
-   })
+  //  test('hello component has className hello ',()=>{
+  //   expect(wrapper.find('.hello').length).toBe(1);
+  //  })
+  //  test('hello component has prop name equal "enzyme" ',()=>{
+  //   expect(wrapper.prop('name')).toEqual('enzyme');
+  //  })
 });
