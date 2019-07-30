@@ -1,6 +1,10 @@
 # 前端单元测试
 使用jest+enzyme 测试react项目
 
+## Tip 
+- snapshot测试recompose的组件需使用enzyme的mount方法, shallow方法不能得到预期的结果
+- 
+
 ## 资料
 
 
