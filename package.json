@@ -4,7 +4,8 @@
   "description": "jest demo",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "test:u": "jest -u --coverage"
   },
   "husky": {
     "hooks": {
@@ -29,12 +30,15 @@
     "babel-jest": "^24.8.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-react-intl": "^2.0.5",
     "enzyme-to-json": "^3.3.5",
     "husky": "^3.0.1",
-    "jest": "^24.0.0"
+    "jest": "^24.0.0",
+    "react-intl": "^2.9.0"
   },
   "dependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "recompose": "^0.30.0"
   }
 }

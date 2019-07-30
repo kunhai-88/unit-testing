@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing hello component render hello component 1`] = `
+<withState(withState(Component))
+  name="enzyme"
+  setTest={[Function]}
+/>
+`;
