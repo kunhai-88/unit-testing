@@ -24,10 +24,24 @@ Jest是Facebook于2015年推出的一个基于Jasmine的JavaScript测试框架�
 - Mock系统：Jest实现了一个强大的Mock系统，支持自动和手动mock
 - 支持异步代码测试：支持Promise和async/await
 
+## Istanbul 代码覆盖率
+
+- 行覆盖率(line coverage)：是否测试用例的每一行都执行了
+- 函数覆盖率(function coverage)：是否测试用例的每一个函数都调用了
+- 分支覆盖率(branch coverage)：是否测试用例的每个if代码块都执行了
+- 语句覆盖率(statement coverage)：是否测试用例的每个语句都执行了
+
+
 ## Enzyme 介绍
 
 Enzyme是Airbnb开源的React测试工具库库，它对官方的测试工具库ReactTestUtils的二次封装，提供了一套简洁强大的 API，并内置Cheerio
 实现了jQuery风格的方式进行DOM 处理，开发体验十分友好。在开源社区有超高人气，同时也获得了React 官方的推荐。
+
+## Enzyme 三种渲染方法
+- shallow：浅渲染，是对官方的Shallow Renderer的封装。将组件渲染成虚拟DOM对象，只会渲染第一层，子组件将不会被渲染出来，使得效率非常高。不需要DOM环境， 并可以使用jQuery的方式访问组件的信息
+- render：静态渲染，它将React组件渲染成静态的HTML字符串，然后使用Cheerio这个库解析这段字符串，并返回一个Cheerio的实例对象，可以用来分析组件的html结构
+- mount：完全渲染，它将组件渲染加载成一个真实的DOM节点，用来测试DOM API的交互和组件的生命周期。用到了jsdom来模拟浏览器环境
+ 三种方法中，shallow和mount因为返回的是DOM对象，可以用simulate进行交互模拟，而render方法不可以。一般shallow方法就可以满足需求，如果需要对子组件进行判断，需要使用render，如果需要测试组件的生命周期，需要使用mount方法。
 
 ## Tip 
 - snapshot测试recompose的组件需使用enzyme的mount方法, shallow方法不能得到预期的结果
