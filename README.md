@@ -1,5 +1,13 @@
 # 前端单元测试
-使用jest+enzyme 测试react项目
+前端单元测试技术选型
+
+## 单元测试
+单元测试是对软件组成单元进行测试。单元可以是一个函数，也可以是一个模块或一个组件，基本特征就是只要输入不变，必定返回同样的输出。软件越容易写单元测试，就表明它的模块化结构越好，给模块之间的耦合越弱。React的组件化和函数式编程，天生适合进行单元测试。
+
+## 前端为什么要进行单元测试？
+1. 发现被测代码与预期功能的是否有差异，验证代码的正确性。
+2. 作为代码行为的描述和使用示例，便于以后修改和重构, 减少维护成本，降低重构难度。
+3. 促使开发者写可测试的代码，加深我们对业务的理解。
 
 
 ## Jest 介绍
@@ -9,13 +17,12 @@ Jest是Facebook于2015年推出的一个基于Jasmine的JavaScript测试框架�
 已经用于React、React Native、Babel、Antd的等项目的测试。
 
 ## Jest优点
-- 易用性：基于[Jasmine](https://jasmine.github.io/)，自带断言库，支持多种测试风格。开箱即用,配置灵活。
+- 易用性：基于[Jasmine](https://jasmine.github.io/)，自带断言库，测试覆盖率工具([Istanbul](https://github.com/gotwarlost/istanbul))。开箱即用,配置灵活。
 - 沙箱和快照：Jest内置了JSDOM，能够模拟浏览器环境，并且并行执行
 - 快照测试：Jest能够对React组件树进行序列化，生成对应的字符串快照，通过比较字符串提供高性能的UI检测
 - 高性能：多线程运行，速度更快
 - Mock系统：Jest实现了一个强大的Mock系统，支持自动和手动mock
 - 支持异步代码测试：支持Promise和async/await
-- 自动生成静态分析结果：内置[Istanbul](https://github.com/gotwarlost/istanbul)，测试代码覆盖率，并生成对应的报告
 
 ## Enzyme 介绍
 
