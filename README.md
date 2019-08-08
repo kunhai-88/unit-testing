@@ -4,16 +4,17 @@
 
 ## Jest 介绍
 
-Jest是Facebook于2015年推出的一个基于Jasmine的JavaScript测试框架。主要用于React和React Native的单元测试。
+Jest是Facebook于2015年推出的一个基于Jasmine的JavaScript测试框架。
+
+已经用于React、React Native、Babel、Antd的等项目的测试。
 
 ## Jest优点
-- 易用性：基于Jasmine，提供断言库，支持多种测试风格
-- 适应性：Jest是模块化、可扩展和可配置的
+- 易用性：基于[Jasmine](https://jasmine.github.io/)，自带断言库，支持多种测试风格。开箱即用,配置灵活。
 - 沙箱和快照：Jest内置了JSDOM，能够模拟浏览器环境，并且并行执行
 - 快照测试：Jest能够对React组件树进行序列化，生成对应的字符串快照，通过比较字符串提供高性能的UI检测
+- 高性能：多线程运行，速度更快
 - Mock系统：Jest实现了一个强大的Mock系统，支持自动和手动mock
 - 支持异步代码测试：支持Promise和async/await
-- 自动生成静态分析结果：内置Istanbul，测试代码覆盖率，并生成对应的报告
 - 自动生成静态分析结果：内置[Istanbul](https://github.com/gotwarlost/istanbul)，测试代码覆盖率，并生成对应的报告
 
 ## Enzyme 介绍
