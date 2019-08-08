@@ -1,6 +1,26 @@
 # 前端单元测试
 使用jest+enzyme 测试react项目
 
+
+## Jest 介绍
+
+Jest是Facebook于2015年推出的一个基于Jasmine的JavaScript测试框架。主要用于React和React Native的单元测试。
+
+## Jest优点
+- 易用性：基于Jasmine，提供断言库，支持多种测试风格
+- 适应性：Jest是模块化、可扩展和可配置的
+- 沙箱和快照：Jest内置了JSDOM，能够模拟浏览器环境，并且并行执行
+- 快照测试：Jest能够对React组件树进行序列化，生成对应的字符串快照，通过比较字符串提供高性能的UI检测
+- Mock系统：Jest实现了一个强大的Mock系统，支持自动和手动mock
+- 支持异步代码测试：支持Promise和async/await
+- 自动生成静态分析结果：内置Istanbul，测试代码覆盖率，并生成对应的报告
+- 自动生成静态分析结果：内置[Istanbul](https://github.com/gotwarlost/istanbul)，测试代码覆盖率，并生成对应的报告
+
+## Enzyme 介绍
+
+Enzyme是Airbnb开源的React测试工具库库，它对官方的测试工具库ReactTestUtils的二次封装，提供了一套简洁强大的 API，并内置Cheerio
+实现了jQuery风格的方式进行DOM 处理，开发体验十分友好。在开源社区有超高人气，同时也获得了React 官方的推荐。
+
 ## Tip 
 - snapshot测试recompose的组件需使用enzyme的mount方法, shallow方法不能得到预期的结果
 - 
