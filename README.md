@@ -1,6 +1,10 @@
 # 前端单元测试
 前端单元测试技术选型
 
+## 软件测试
+定义：再规定条件下对程序进行操作，以发现程序中的错误，衡量软件质量，并对其是否满足设计要求进行评估的过程。
+目的：希望以最小的代价尽可能多地找出软件中潜在的错误和缺陷
+
 ## 单元测试
 单元测试是对软件组成单元进行测试。单元可以是一个函数，也可以是一个模块或一个组件，基本特征就是只要输入不变，必定返回同样的输出。软件越容易写单元测试，就表明它的模块化结构越好，给模块之间的耦合越弱。React的组件化和函数式编程，天生适合进行单元测试。
 
@@ -14,7 +18,7 @@
 
 Jest是Facebook于2015年推出的一个基于Jasmine的JavaScript测试框架。
 
-已经用于React、React Native、Babel、Antd的等项目的测试。
+已经用于React、React Native、Babel、Redux、Antd的等项目的测试。
 
 ## Jest优点
 - 易用性：基于[Jasmine](https://jasmine.github.io/)，自带断言库，测试覆盖率工具([Istanbul](https://github.com/gotwarlost/istanbul))。开箱即用,配置灵活。
@@ -45,7 +49,6 @@ Enzyme是Airbnb开源的React测试工具库库，它对官方的测试工具库
 
 ## Tip 
 - snapshot测试recompose的组件需使用enzyme的mount方法, shallow方法不能得到预期的结果
-- 
 
 ## 资料
 
