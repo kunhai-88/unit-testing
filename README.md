@@ -22,9 +22,9 @@ Jest是Facebook于2015年推出的一个基于Jasmine的JavaScript测试框架�
 
 ## Jest优点
 - 易用性：基于[Jasmine](https://jasmine.github.io/)，自带断言库，测试覆盖率工具([Istanbul](https://github.com/gotwarlost/istanbul))。开箱即用,配置灵活。
-- 沙箱和快照：Jest内置了JSDOM，能够模拟浏览器环境，并且并行执行
+- 沙箱和快照：Jest内置了JSDOM，能够模拟浏览器环境，并且并行执行。
 - 快照测试：Jest能够对React组件树进行序列化，生成对应的字符串快照，通过比较字符串提供高性能的UI检测
-- 高性能：多线程运行，速度更快
+- 高性能：多线程运行，速度更快。
 - Mock系统：Jest实现了一个强大的Mock系统，支持自动和手动mock
 - 支持异步代码测试：支持Promise和async/await
 
@@ -39,7 +39,7 @@ Jest是Facebook于2015年推出的一个基于Jasmine的JavaScript测试框架�
 ## Enzyme 介绍
 
 Enzyme是Airbnb开源的React测试工具库库，它对官方的测试工具库ReactTestUtils的二次封装，提供了一套简洁强大的 API，并内置Cheerio
-实现了jQuery风格的方式进行DOM 处理，开发体验十分友好。在开源社区有超高人气，同时也获得了React 官方的推荐。
+实现了jQuery风格的方式进行DOM 处理，开发体验十分友好。在开源社区有超高人气，同时也获得了React官方的推荐。
 
 ## Enzyme 三种渲染方法
 - shallow：浅渲染，是对官方的Shallow Renderer的封装。将组件渲染成虚拟DOM对象，只会渲染第一层，子组件将不会被渲染出来，使得效率非常高。不需要DOM环境， 并可以使用jQuery的方式访问组件的信息
