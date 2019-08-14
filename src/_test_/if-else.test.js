@@ -16,6 +16,7 @@ describe('test ifElse function',()=>{
   test('mock left function',()=>{
     ifElse(mockTrue,mockFirst,last)(a);
     expect(mockFirst).toBeCalled();
+    expect(mockFirst).toBeCalledTimes(1);
   });
 
   test('right function',()=>{
