@@ -34,6 +34,8 @@
     "enzyme-to-json": "^3.3.5",
     "husky": "^3.0.1",
     "jest": "^24.0.0",
+    "jest-html-reporters": "^1.1.8",
+    "jest-stare": "^1.18.1",
     "react-intl": "^2.9.0"
   },
   "dependencies": {
