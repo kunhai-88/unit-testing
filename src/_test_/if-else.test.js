@@ -1,21 +1,24 @@
-import { first, last, isEmpty, size } from 'lodash/fp'
+import { first, last } from 'lodash/fp'
 import ifElse from '../if-else';
 
 
 describe('test ifElse function',()=>{
   const a = [1,2, 3, 4];
-  const mockFirst = jest.fn(x => a && a[0]);
- 
+  const mockFirst = jest.fn();
+  const mockTrue = jest.fn();
+  mockTrue.mockReturnValue(true);
+  const mockFalse = jest.fn();
+  mockFalse.mockReturnValue(false); 
   test('left function',()=>{
-    expect(ifElse(size,first,last)(a)).toBe(1);
+    expect(ifElse(mockTrue,first,last)(a)).toBe(1);
   });
 
   test('mock left function',()=>{
-    ifElse(size,mockFirst,last)(a);
+    ifElse(mockTrue,mockFirst,last)(a);
     expect(mockFirst).toBeCalled();
   });
 
   test('right function',()=>{
-    expect(ifElse(isEmpty,first,last)(a)).toBe(4);
+    expect(ifElse(mockFalse,first,last)(a)).toBe(4);
   });
 });
