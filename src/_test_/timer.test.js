@@ -2,9 +2,7 @@ import { interval } from '../timer';
 
 
 describe('test interval',()=>{
-  const fun = jest.fn(()=>{
-    console.log(new Date());
-  });
+  const fun = jest.fn();
   jest.useFakeTimers();
   interval(fun,1000);
   test('function be called',()=>{
