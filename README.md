@@ -57,6 +57,8 @@ Enzyme是Airbnb开源的React测试工具库库，它对官方的测试工具库
 
 [关于前端开发谈谈单元测试](https://segmentfault.com/a/1190000000317146)
 
+[前端单元测试实践](https://zhuanlan.zhihu.com/p/55960017)
+
 [前端测试框架 Jest](https://zhuanlan.zhihu.com/p/28247899)
 
 [使用 Jest 和 Enzyme 测试 React 组件](https://zhuanlan.zhihu.com/p/63297384)
