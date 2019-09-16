@@ -9,7 +9,7 @@ const c = {
 const d = {
   a,
   o: {
-    name: "hello"
+    name: "hello2"
   }
 };
 

@@ -7,7 +7,7 @@
   "numPendingTests": 0,
   "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
-  "numTotalTestSuites": 0,
+  "numTotalTestSuites": 1,
   "numTotalTests": 0,
   "openHandles": [],
   "snapshot": {
@@ -25,8 +25,8 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1566459164697,
-  "success": true,
+  "startTime": 1568616695277,
+  "success": false,
   "testResults": [],
   "wasInterrupted": false
 }
