@@ -71,7 +71,7 @@
                 <canvas id="test-suites-canvas" width="100" height="100"></canvas>
                 <h2>Test Suites</h2>
                 <div class="list-group">
-                    <p id="test-suites-results" class="list-group-item list-group-item-action">9 passed, 11 total</p>
+                    <p id="test-suites-results" class="list-group-item list-group-item-action">0 passed, 11 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -79,7 +79,7 @@
                 <canvas id="tests-canvas" width="100" height="100"></canvas>
                 <h2>Tests</h2>
                 <div class="list-group">
-                    <p id="tests-results" class="list-group-item list-group-item-action">14 passed, 15 total</p>
+                    <p id="tests-results" class="list-group-item list-group-item-action">0 passed, 0 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -87,7 +87,7 @@
                 <canvas id="snapshots-canvas" width="100" height="100"></canvas>
                 <h2>Snapshots</h2>
                 <div class="list-group">
-                    <p id="snapshots-results" class="list-group-item list-group-item-action">1 passed, 1 total</p>
+                    <p id="snapshots-results" class="list-group-item list-group-item-action">0 passed, 0 total</p>
                 </div>
             </div>
             <!-- /.col-lg-4 -->
@@ -99,21 +99,23 @@
         </div>
 
         <div class="d-none" id="test-config">{
+  &quot;additionalResultsProcessors&quot;: [],
+  &quot;log&quot;: false,
   &quot;resultDir&quot;: &quot;.&#x2F;jest-stare&#x2F;&quot;,
   &quot;resultHtml&quot;: &quot;index.html&quot;,
   &quot;resultJson&quot;: &quot;jest-results.json&quot;
 }</div>
         <div class="d-none" id="test-results">{
-  &quot;numFailedTestSuites&quot;: 2,
-  &quot;numFailedTests&quot;: 1,
-  &quot;numPassedTestSuites&quot;: 9,
-  &quot;numPassedTests&quot;: 14,
+  &quot;numFailedTestSuites&quot;: 0,
+  &quot;numFailedTests&quot;: 0,
+  &quot;numPassedTestSuites&quot;: 0,
+  &quot;numPassedTests&quot;: 0,
   &quot;numPendingTestSuites&quot;: 0,
   &quot;numPendingTests&quot;: 0,
-  &quot;numRuntimeErrorTestSuites&quot;: 1,
+  &quot;numRuntimeErrorTestSuites&quot;: 0,
   &quot;numTodoTests&quot;: 0,
   &quot;numTotalTestSuites&quot;: 11,
-  &quot;numTotalTests&quot;: 15,
+  &quot;numTotalTests&quot;: 0,
   &quot;openHandles&quot;: [],
   &quot;snapshot&quot;: {
     &quot;added&quot;: 0,
@@ -123,479 +125,71 @@
     &quot;filesRemoved&quot;: 0,
     &quot;filesUnmatched&quot;: 0,
     &quot;filesUpdated&quot;: 0,
-    &quot;matched&quot;: 1,
-    &quot;total&quot;: 1,
+    &quot;matched&quot;: 0,
+    &quot;total&quot;: 0,
     &quot;unchecked&quot;: 0,
     &quot;uncheckedKeysByFile&quot;: [],
     &quot;unmatched&quot;: 0,
     &quot;updated&quot;: 0
   },
-  &quot;startTime&quot;: 1568946175090,
+  &quot;startTime&quot;: 1568946482106,
   &quot;success&quot;: false,
-  &quot;testResults&quot;: [
-    {
-      &quot;failureMessage&quot;: &quot;\u001b[1m\u001b[31m  \u001b[1m● \u001b[1mArray › c deep equal d\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) &#x2F;&#x2F; deep equality\u001b[22m\n\n    \u001b[32m- Expected\u001b[39m\n    \u001b[31m+ Received\u001b[39m\n\n    \u001b[33m@@ -4,8 +4,8 @@\u001b[39m\n    \u001b[2m      2,\u001b[22m\n    \u001b[2m      3,\u001b[22m\n    \u001b[2m      4,\u001b[22m\n    \u001b[2m    ],\u001b[22m\n    \u001b[2m    \&quot;o\&quot;: Object {\u001b[22m\n    \u001b[32m-     \&quot;name\&quot;: \&quot;hello2\&quot;,\u001b[39m\n    \u001b[31m+     \&quot;name\&quot;: \&quot;hello\&quot;,\u001b[39m\n    \u001b[2m    },\u001b[22m\n    \u001b[2m  }\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 19 | \u001b[39m  })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 20 | \u001b[39m  test(\u001b[32m\&quot;c deep equal d\&quot;\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m&#x3D;&gt;\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m&gt;\u001b[2m\u001b[39m\u001b[90m 21 | \u001b[39m    expect(c)\u001b[33m.\u001b[39mtoEqual(d)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    | \u001b[39m              \u001b[31m\u001b[1m^\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 22 | \u001b[39m  })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 23 | \u001b[39m})\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 24 | \u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.toEqual (\u001b[2m\u001b[0m\u001b[36msrc&#x2F;_test_&#x2F;array.test.js\u001b[39m\u001b[0m\u001b[2m:21:15)\u001b[2m\u001b[22m\n&quot;,
-      &quot;numFailingTests&quot;: 1,
-      &quot;numPassingTests&quot;: 1,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1568946179366,
-        &quot;start&quot;: 1568946178876
-      },
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
-      },
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;array.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Array&quot;
-          ],
-          &quot;duration&quot;: 7,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;Array a equal b&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;a equal b&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;Array&quot;
-          ],
-          &quot;duration&quot;: 13,
-          &quot;failureMessages&quot;: [
-            &quot;Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) &#x2F;&#x2F; deep equality\u001b[22m\n\n\u001b[32m- Expected\u001b[39m\n\u001b[31m+ Received\u001b[39m\n\n\u001b[33m@@ -4,8 +4,8 @@\u001b[39m\n\u001b[2m      2,\u001b[22m\n\u001b[2m      3,\u001b[22m\n\u001b[2m      4,\u001b[22m\n\u001b[2m    ],\u001b[22m\n\u001b[2m    \&quot;o\&quot;: Object {\u001b[22m\n\u001b[32m-     \&quot;name\&quot;: \&quot;hello2\&quot;,\u001b[39m\n\u001b[31m+     \&quot;name\&quot;: \&quot;hello\&quot;,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m  }\u001b[22m\n    at Object.toEqual (&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;array.test.js:21:15)\n    at Object.asyncJestTest (&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;node_modules&#x2F;jest-jasmine2&#x2F;build&#x2F;jasmineAsyncInstall.js:102:37)\n    at resolve (&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;node_modules&#x2F;jest-jasmine2&#x2F;build&#x2F;queueRunner.js:43:12)\n    at new Promise (&lt;anonymous&gt;)\n    at mapper (&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;node_modules&#x2F;jest-jasmine2&#x2F;build&#x2F;queueRunner.js:26:19)\n    at promise.then (&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;node_modules&#x2F;jest-jasmine2&#x2F;build&#x2F;queueRunner.js:73:41)\n    at process._tickCallback (internal&#x2F;process&#x2F;next_tick.js:68:7)&quot;
-          ],
-          &quot;fullName&quot;: &quot;Array c deep equal d&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;failed&quot;,
-          &quot;title&quot;: &quot;c deep equal d&quot;
-        }
-      ],
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
-    },
-    {
-      &quot;failureMessage&quot;: null,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 1,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1568946179504,
-        &quot;start&quot;: 1568946178973
-      },
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 1,
-        &quot;unchecked&quot;: 0,
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
-      },
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;compose-component.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;testing hello component&quot;
-          ],
-          &quot;duration&quot;: 21,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;testing hello component render hello component&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;render hello component&quot;
-        }
-      ],
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
-    },
-    {
-      &quot;failureMessage&quot;: null,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 1,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1568946180970,
-        &quot;start&quot;: 1568946179832
-      },
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
-      },
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;promise.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;testing promise&quot;
-          ],
-          &quot;duration&quot;: 1004,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;testing promise should get \&quot;hi world\&quot;&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should get \&quot;hi world\&quot;&quot;
-        }
-      ],
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
-    },
-    {
-      &quot;failureMessage&quot;: null,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 1,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1568946181115,
-        &quot;start&quot;: 1568946179973
-      },
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
-      },
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;cb-hi.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;testing async function&quot;
-          ],
-          &quot;duration&quot;: 1007,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;testing async function should get \&quot;Hi world\&quot;&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should get \&quot;Hi world\&quot;&quot;
-        }
-      ],
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
-    },
-    {
-      &quot;failureMessage&quot;: null,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 3,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1568946181716,
-        &quot;start&quot;: 1568946181414
-      },
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
-      },
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;if-else.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;test ifElse function&quot;
-          ],
-          &quot;duration&quot;: 2,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;test ifElse function left function&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;left function&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;test ifElse function&quot;
-          ],
-          &quot;duration&quot;: 3,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;test ifElse function mock left function&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;mock left function&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;test ifElse function&quot;
-          ],
-          &quot;duration&quot;: 1,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;test ifElse function right function&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;right function&quot;
-        }
-      ],
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
-    },
-    {
-      &quot;failureMessage&quot;: null,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 1,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1568946181746,
-        &quot;start&quot;: 1568946181588
-      },
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
-      },
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;timer.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;test interval&quot;
-          ],
-          &quot;duration&quot;: 5,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;test interval function be called&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;function be called&quot;
-        }
-      ],
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
-    },
-    {
-      &quot;failureMessage&quot;: null,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 2,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1568946182344,
-        &quot;start&quot;: 1568946182209
-      },
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
-      },
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;compare-object.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;object testing&quot;
-          ],
-          &quot;duration&quot;: 3,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;object testing cat equal dog&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;cat equal dog&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;object testing&quot;
-          ],
-          &quot;duration&quot;: 0,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;object testing cat is defined&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;cat is defined&quot;
-        }
-      ],
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
-    },
-    {
-      &quot;failureMessage&quot;: null,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 2,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1568946182381,
-        &quot;start&quot;: 1568946182238
-      },
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
-      },
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;zh.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;中文字符串&quot;
-          ],
-          &quot;duration&quot;: 2,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;中文字符串 包含\&quot;中文\&quot;&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;包含\&quot;中文\&quot;&quot;
-        },
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;中文字符串&quot;
-          ],
-          &quot;duration&quot;: 3,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;中文字符串 passes when given an empty string&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;passes when given an empty string&quot;
-        }
-      ],
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
-    },
-    {
-      &quot;failureMessage&quot;: null,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 1,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1568946182481,
-        &quot;start&quot;: 1568946178875
-      },
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
-      },
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;async.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;testing Async&#x2F;Await&quot;
-          ],
-          &quot;duration&quot;: 1011,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;testing Async&#x2F;Await should get \&quot;hi world\&quot;&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;should get \&quot;hi world\&quot;&quot;
-        }
-      ],
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
-    },
-    {
-      &quot;failureMessage&quot;: null,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 1,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 1568946182891,
-        &quot;start&quot;: 1568946182740
-      },
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0,
-        &quot;uncheckedKeys&quot;: []
-      },
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;sum.test.js&quot;,
-      &quot;testResults&quot;: [
-        {
-          &quot;ancestorTitles&quot;: [
-            &quot;testing sum&quot;
-          ],
-          &quot;duration&quot;: 3,
-          &quot;failureMessages&quot;: [],
-          &quot;fullName&quot;: &quot;testing sum adds 1 + 2 to equal 3&quot;,
-          &quot;location&quot;: null,
-          &quot;numPassingAsserts&quot;: 0,
-          &quot;status&quot;: &quot;passed&quot;,
-          &quot;title&quot;: &quot;adds 1 + 2 to equal 3&quot;
-        }
-      ],
-      &quot;skipped&quot;: false,
-      &quot;leaks&quot;: false
-    },
-    {
-      &quot;displayName&quot;: &quot;&quot;,
-      &quot;failureMessage&quot;: &quot;  \u001b[1m● \u001b[22mTest suite failed to run\n\n    Cannot find module &#39;.&#x2F;name-component&#39; from &#39;hello-component.test.js&#39;\n\n    \u001b[0m \u001b[90m 2 | \u001b[39m\u001b[36mimport\u001b[39m toJson from \u001b[32m&#39;enzyme-to-json&#39;\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 3 | \u001b[39m\u001b[36mimport\u001b[39m \u001b[33mHelloComponent\u001b[39m from \u001b[32m&#39;..&#x2F;hello-component&#39;\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n    \u001b[0m\u001b[31m\u001b[1m&gt;\u001b[22m\u001b[39m\u001b[90m 4 | \u001b[39m\u001b[36mimport\u001b[39m \u001b[33mName\u001b[39m from \u001b[32m&#39;.&#x2F;name-component&#39;\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m   | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 5 | \u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 6 | \u001b[39mdescribe(\u001b[32m&#39;testing hello component&#39;\u001b[39m\u001b[33m,\u001b[39m()\u001b[33m&#x3D;&gt;\u001b[39m{\u001b[0m\n    \u001b[0m \u001b[90m 7 | \u001b[39m  let wrapper\u001b[33m;\u001b[39m\u001b[0m\n\n      \u001b[2mat Resolver.resolveModule (\u001b[22mnode_modules&#x2F;jest-resolve&#x2F;build&#x2F;index.js\u001b[2m:230:17)\u001b[22m\n      \u001b[2mat Object.&lt;anonymous&gt; (\u001b[22m\u001b[0m\u001b[36msrc&#x2F;_test_&#x2F;hello-component.test.js\u001b[39m\u001b[0m\u001b[2m:4:1)\u001b[22m\n&quot;,
-      &quot;leaks&quot;: false,
-      &quot;numFailingTests&quot;: 0,
-      &quot;numPassingTests&quot;: 0,
-      &quot;numPendingTests&quot;: 0,
-      &quot;numTodoTests&quot;: 0,
-      &quot;openHandles&quot;: [],
-      &quot;perfStats&quot;: {
-        &quot;end&quot;: 0,
-        &quot;start&quot;: 0
-      },
-      &quot;skipped&quot;: false,
-      &quot;snapshot&quot;: {
-        &quot;added&quot;: 0,
-        &quot;fileDeleted&quot;: false,
-        &quot;matched&quot;: 0,
-        &quot;unchecked&quot;: 0,
-        &quot;uncheckedKeys&quot;: [],
-        &quot;unmatched&quot;: 0,
-        &quot;updated&quot;: 0
-      },
-      &quot;testExecError&quot;: &quot;Cannot find module &#39;.&#x2F;name-component&#39; from &#39;hello-component.test.js&#39;&quot;,
-      &quot;testFilePath&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;src&#x2F;_test_&#x2F;hello-component.test.js&quot;,
-      &quot;testResults&quot;: []
-    }
-  ],
+  &quot;testResults&quot;: [],
   &quot;wasInterrupted&quot;: false
 }</div>
-        <div class="d-none" id="test-global-config"></div>
+        <div class="d-none" id="test-global-config">{
+  &quot;bail&quot;: 0,
+  &quot;changedFilesWithAncestor&quot;: false,
+  &quot;collectCoverage&quot;: true,
+  &quot;collectCoverageFrom&quot;: null,
+  &quot;coverageDirectory&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;coverage&quot;,
+  &quot;coverageReporters&quot;: [
+    &quot;json&quot;,
+    &quot;text&quot;,
+    &quot;lcov&quot;,
+    &quot;clover&quot;
+  ],
+  &quot;coverageThreshold&quot;: null,
+  &quot;detectLeaks&quot;: false,
+  &quot;detectOpenHandles&quot;: false,
+  &quot;errorOnDeprecated&quot;: false,
+  &quot;expand&quot;: false,
+  &quot;filter&quot;: null,
+  &quot;globalSetup&quot;: null,
+  &quot;globalTeardown&quot;: null,
+  &quot;json&quot;: false,
+  &quot;listTests&quot;: false,
+  &quot;maxConcurrency&quot;: 5,
+  &quot;maxWorkers&quot;: 3,
+  &quot;noStackTrace&quot;: false,
+  &quot;nonFlagArgs&quot;: [],
+  &quot;notify&quot;: true,
+  &quot;notifyMode&quot;: &quot;failure-change&quot;,
+  &quot;passWithNoTests&quot;: false,
+  &quot;projects&quot;: null,
+  &quot;reporters&quot;: [
+    [
+      &quot;default&quot;,
+      {}
+    ],
+    [
+      &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;node_modules&#x2F;jest-stare&#x2F;lib&#x2F;index.js&quot;,
+      {}
+    ]
+  ],
+  &quot;rootDir&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&quot;,
+  &quot;runTestsByPath&quot;: false,
+  &quot;skipFilter&quot;: false,
+  &quot;testFailureExitCode&quot;: 1,
+  &quot;testPathPattern&quot;: &quot;&quot;,
+  &quot;testResultsProcessor&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;node_modules&#x2F;jest-stare&#x2F;lib&#x2F;index.js&quot;,
+  &quot;testSequencer&quot;: &quot;&#x2F;Users&#x2F;yangkunhai&#x2F;www&#x2F;unit-testing&#x2F;node_modules&#x2F;@jest&#x2F;test-sequencer&#x2F;build&#x2F;index.js&quot;,
+  &quot;updateSnapshot&quot;: &quot;new&quot;,
+  &quot;useStderr&quot;: false,
+  &quot;verbose&quot;: null,
+  &quot;watch&quot;: false,
+  &quot;watchman&quot;: true
+}</div>
 
     </main>
     <hr>

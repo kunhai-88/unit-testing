@@ -8,11 +8,6 @@
     "test:u": "jest -u --coverage",
     "majestic": "node --max_old_space_size=4096 ./node_modules/majestic/dist/server/index.js"
   },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm test"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ahai3840/jest-demo.git"
