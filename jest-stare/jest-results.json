@@ -1,14 +1,14 @@
 {
   "numFailedTestSuites": 0,
   "numFailedTests": 0,
-  "numPassedTestSuites": 0,
-  "numPassedTests": 0,
+  "numPassedTestSuites": 1,
+  "numPassedTests": 1,
   "numPendingTestSuites": 0,
   "numPendingTests": 0,
   "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
-  "numTotalTestSuites": 0,
-  "numTotalTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 1,
   "openHandles": [],
   "snapshot": {
     "added": 0,
@@ -25,8 +25,46 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1568858342747,
+  "startTime": 1568944619427,
   "success": true,
-  "testResults": [],
+  "testResults": [
+    {
+      "failureMessage": null,
+      "numFailingTests": 0,
+      "numPassingTests": 1,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "perfStats": {
+        "end": 1568944624057,
+        "start": 1568944621382
+      },
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "unmatched": 0,
+        "updated": 0,
+        "uncheckedKeys": []
+      },
+      "testFilePath": "/Users/yangkunhai/www/unit-testing/src/_test_/async.test.js",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "testing Async/Await"
+          ],
+          "duration": 1034,
+          "failureMessages": [],
+          "fullName": "testing Async/Await should get \"hi world\"",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "passed",
+          "title": "should get \"hi world\""
+        }
+      ],
+      "skipped": false,
+      "leaks": false
+    }
+  ],
   "wasInterrupted": false
 }

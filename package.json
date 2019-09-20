@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "test:u": "jest -u --coverage"
+    "test:u": "jest -u --coverage",
+    "majestic": "node --max_old_space_size=4096 ./node_modules/majestic/dist/server/index.js"
   },
   "husky": {
     "hooks": {
@@ -28,6 +29,8 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-jest": "^24.8.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-react-intl": "^2.0.5",
@@ -36,6 +39,7 @@
     "jest": "^24.8.0",
     "jest-extended": "^0.11.2",
     "jest-stare": "^1.18.1",
+    "majestic": "^1.6.0",
     "react-intl": "^2.9.0"
   },
   "dependencies": {

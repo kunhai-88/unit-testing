@@ -1,4 +1,4 @@
-let asyncHi= require('../async-hi')
+let asyncHi= require('../cb-hi')
 
 describe('testing async function',()=>{
     test('should get "Hi world"', (done) => {

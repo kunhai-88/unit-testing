@@ -48,9 +48,8 @@ Enzyme是Airbnb开源的React测试工具库库，它对官方的测试工具库
  三种方法中，shallow和mount因为返回的是DOM对象，可以用simulate进行交互模拟，而render方法不可以。一般shallow方法就可以满足需求，如果需要对子组件进行判断，需要使用render，如果需要测试组件的生命周期，需要使用mount方法。
 
 ## Tip 
-- snapshot测试recompose的组件需使用enzyme的mount方法, shallow方法不能得到预期的结果
-
-## 资料
+- snapshot测试recompose的组件需使用enzyme的mount方法, shallow方法不能得到预期的结果-
+  ## 资料
 
 
 [star-history](https://star-history.t9t.io/#jasmine/jasmine&facebook/jest&mochajs/mocha&karma-runner/karma&airbnb/enzyme&avajs/ava)
